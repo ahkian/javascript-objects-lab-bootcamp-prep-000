@@ -5,4 +5,7 @@ function updateObjectWithKeyAndValue(objectName, key, value){
   return newObj
 }
 
-function
+function destructivelyUpdateObjectWithKeyAndValue(objectName, key, value){
+  Object.assign(objectName, {[key]: value})
+  return objectName
+}
